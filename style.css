@@ -296,3 +296,64 @@ button:hover{
 
     letter-spacing: 1px;
 }
+
+
+
+
+@media (max-width: 768px){
+
+    body{
+        height: auto;
+
+        padding: 40px 20px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 38px;
+
+        letter-spacing: 6px;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
+
+    .panels{
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .divider{
+        display: none;
+    }
+
+    .enc,
+    .denc{
+        width: 100%;
+
+        max-width: 350px;
+
+        padding: 24px;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+    button{
+        font-size: 13px;
+    }
+
+    #encrypt-result,
+    #decrypt-result{
+        min-height: 90px;
+
+        font-size: 13px;
+    }
+
+}
