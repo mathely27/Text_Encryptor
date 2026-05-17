@@ -1,4 +1,23 @@
-body{
+/* body{
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+    radial-gradient(circle at top,#111827,#020617 70%);
+
+   
+    background-size: 28px 28px;
+    font-family: "Share Tech Mono", monospace;
+
+    overflow: hidden;
+
+    color: white;
+} */
+ body{
     margin: 0;
     height: 100vh;
 
@@ -207,7 +226,7 @@ button:hover{
 #decrypt-result{
     margin-top: 25px;
 
-    min-height: 120px;
+    min-height: 90px;
 
     border-radius: 20px;
 
@@ -264,4 +283,16 @@ button:hover{
 
 .result-box{
     position:relative;
+}
+
+
+
+#encrypt-time{
+    margin-top: 12px;
+
+    font-size: 15px;
+
+    color: rgba(255,255,255,1);
+
+    letter-spacing: 1px;
 }

@@ -1,3 +1,7 @@
+const encryptTime=document.getElementById("encrypt-time")
+
+
+
 
 const encryptInput = document.getElementById("encrypt-input")
 
@@ -10,6 +14,11 @@ encryptBtn.addEventListener("click", function(){
     const text = encryptInput.value
 
     encryptResult.innerText = btoa(text)
+    const time = new Date()
+
+encryptTime.innerText =
+"Encrypted at: " + time.toLocaleTimeString()
+ 
 
 })
 
@@ -41,6 +50,18 @@ encryptCopy.addEventListener("click",function(){
 
 })
 
+
+const decryptCopy=document.getElementById("decrypt-copy")
+
+decryptCopy.addEventListener("click",function(){
+    const text = decryptResult.innerText
+    navigator.clipboard.writeText(text)
+    alert("Copied to clipboard!!")
+    
+    
+
+})
+
 // encryptInput.addEventListener("keydown", function(event){
 
 //     event.preventDefault()
@@ -52,3 +73,5 @@ encryptCopy.addEventListener("click",function(){
 //     }
 
 // })
+
+
