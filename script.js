@@ -30,12 +30,12 @@ decryptBtn.addEventListener("click",function(){
     }
 })
 
-const copyBtn=document.getElementById("copy-btn")
+const encryptCopy=document.getElementById("encrypt-copy")
 
-copyBtn.addEventListener("click",function(){
+encryptCopy.addEventListener("click",function(){
     const text = encryptResult.innerText
     navigator.clipboard.writeText(text)
-    alert("Copied ti clioboard!!")
+    alert("Copied to clioboard!!")
     
     
 
