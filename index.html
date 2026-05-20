@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Encryptor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Text Encryptor</h1>
-    <div class="panels">
-    <div class="enc">
-        <h2>Encryption</h2>
-        <div>
-            <div>
-                <input type="text" placeholder="Enter your text here" id="encrypt-input">
-            </div>
-            <div>
-                <button type="button" id="encrypt-btn">Encrypt</button>
-            </div>
-            <div class="result-box">
-                <div id="encrypt-result"></div>
-                <div id="encrypt-time"></div>
-                <button type="button" class="copy-icon" id="encrypt-copy">⧉</button>
-            </div>
-            
-            
-        </div>
-    </div>    
-    <div class="divider"></div>
-    <div class="denc">
-        <h2>Decryption</h2>
-        <div>
-            <div>
-                <input type="text" placeholder="Enter your text here" id="decrypt-input">
-            </div>
-            <div>
-                <button type="button" id="decrypt-btn">Decrypt</button>
-            </div>
-            <div class="result-box">
-                <div id="decrypt-result"></div>
-                
-                <button  type="botton" class="copy-icon" id="decrypt-copy">⧉</button>
+        <h1>Text Encryptor</h1>
+        <div class="panels">
+            <div class="enc">
+                <h2>Encryption</h2>
+                <div>
+                    <div>
+                        <input type="text" placeholder="Enter your text here" id="encrypt-input">
+                    </div>
+                    <div>
+                        <button type="button" id="encrypt-btn">Encrypt</button>
+                    </div>
+                    <div class="result-box">
+                        <div id="encrypt-result"></div>
+                        <div id="encrypt-time"></div>
+                        <button type="button" class="copy-icon" id="encrypt-copy">⧉</button>
+                    </div>
 
-            </div>
 
-            
-               
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="denc">
+                <h2>Decryption</h2>
+                <div>
+                    <div>
+                        <input type="text" placeholder="Enter your text here" id="decrypt-input">
+                    </div>
+                    <div>
+                        <button type="button" id="decrypt-btn">Decrypt</button>
+                    </div>
+                    <div class="result-box">
+                        <div id="decrypt-result"></div>
+
+                        <button type="botton" class="copy-icon" id="decrypt-copy">⧉</button>
+
+                    </div>
+
+
+
+                </div>
+            </div>
         </div>
-    </div>          
+
     </div>
-        
-   </div>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

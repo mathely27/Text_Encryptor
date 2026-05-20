@@ -17,7 +17,7 @@
 
     color: white;
 } */
- body{
+body {
     margin: 0;
     min-height: 100vh;
 
@@ -26,7 +26,7 @@
     align-items: center;
 
     background:
-    radial-gradient(circle at top,#111827,#020617 70%);
+        radial-gradient(circle at top, #111827, #020617 70%);
 
     font-family: "Share Tech Mono", monospace;
 
@@ -35,13 +35,13 @@
     color: white;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 65px;
 
     letter-spacing: 12px;
@@ -55,10 +55,10 @@ h1{
     font-weight: 400;
 
     text-shadow:
-    0 0 8px rgba(124,58,237,0.5);
+        0 0 8px rgba(124, 58, 237, 0.5);
 }
 
-.panels{
+.panels {
     display: flex;
 
     align-items: center;
@@ -67,38 +67,38 @@ h1{
 }
 
 .enc,
-.denc{
+.denc {
     width: 380px;
 
     padding: 35px;
 
     border-radius: 24px;
 
-    background: rgba(15,23,42,0.75);
+    background: rgba(15, 23, 42, 0.75);
 
-    border: 1px solid rgba(124,58,237,0.25);
+    border: 1px solid rgba(124, 58, 237, 0.25);
 
     backdrop-filter: blur(20px);
 
     box-shadow:
-    0 10px 40px rgba(0,0,0,0.6),
-    0 0 25px rgba(124,58,237,0.15);
+        0 10px 40px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(124, 58, 237, 0.15);
 
     transition: 0.3s ease;
 }
 
 .enc:hover,
-.denc:hover{
+.denc:hover {
     transform: translateY(-6px);
 
-    border: 1px solid rgba(124,58,237,0.5);
+    border: 1px solid rgba(124, 58, 237, 0.5);
 
     box-shadow:
-    0 15px 50px rgba(0,0,0,0.7),
-    0 0 40px rgba(124,58,237,0.25);
+        0 15px 50px rgba(0, 0, 0, 0.7),
+        0 0 40px rgba(124, 58, 237, 0.25);
 }
 
-h2{
+h2 {
     font-size: 20px;
 
     letter-spacing: 4px;
@@ -110,16 +110,16 @@ h2{
     text-transform: uppercase;
 }
 
-input{
+input {
     width: 100%;
 
     padding: 16px;
 
     border-radius: 14px;
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
-    background: rgba(2,6,23,0.9);
+    background: rgba(2, 6, 23, 0.9);
 
     color: white;
 
@@ -136,27 +136,27 @@ input{
     transition: 0.3s;
 }
 
-input:focus{
+input:focus {
     border: 1px solid #7c3aed;
 
     box-shadow:
-    0 0 15px rgba(124,58,237,0.35);
+        0 0 15px rgba(124, 58, 237, 0.35);
 }
 
-input::placeholder{
-    color: rgba(255,255,255,0.35);
+input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
 }
 
-button{
+button {
     width: 100%;
 
     padding: 15px;
 
     border-radius: 14px;
 
-    border: 1px solid rgba(124,58,237,0.4);
+    border: 1px solid rgba(124, 58, 237, 0.4);
 
-    background: rgba(124,58,237,0.12);
+    background: rgba(124, 58, 237, 0.12);
 
     color: #e9d5ff;
 
@@ -173,7 +173,7 @@ button{
     font-family: "Share Tech Mono", monospace;
 }
 
-button:hover{
+button:hover {
     background: #7c3aed;
 
     color: white;
@@ -181,11 +181,11 @@ button:hover{
     transform: translateY(-3px);
 
     box-shadow:
-    0 0 20px rgba(124,58,237,0.45);
+        0 0 20px rgba(124, 58, 237, 0.45);
 }
 
 #encrypt-result,
-#decrypt-result{
+#decrypt-result {
     margin-top: 25px;
 
     min-height: 120px;
@@ -194,9 +194,9 @@ button:hover{
 
     padding: 18px;
 
-    background: rgba(2,6,23,0.95);
+    background: rgba(2, 6, 23, 0.95);
 
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 
     color: #c4b5fd;
 
@@ -209,21 +209,19 @@ button:hover{
     box-sizing: border-box;
 }
 
-.divider{
+.divider {
     width: 1px;
 
     height: 340px;
 
     background:
-    linear-gradient(
-        transparent,
-        rgba(124,58,237,0.6),
-        transparent
-    );
+        linear-gradient(transparent,
+            rgba(124, 58, 237, 0.6),
+            transparent);
 }
 
 #encrypt-result,
-#decrypt-result{
+#decrypt-result {
     margin-top: 25px;
 
     min-height: 90px;
@@ -232,9 +230,9 @@ button:hover{
 
     padding: 18px;
 
-    background: rgba(2,6,23,0.95);
+    background: rgba(2, 6, 23, 0.95);
 
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 
     color: #c4b5fd;
 
@@ -248,7 +246,8 @@ button:hover{
 
     position: relative;
 }
-.copy-icon{
+
+.copy-icon {
     position: absolute;
 
     top: 14px;
@@ -258,7 +257,7 @@ button:hover{
 
     border: none;
 
-    color: rgba(255,255,255,0.35);
+    color: rgba(255, 255, 255, 0.35);
 
     font-size: 16px;
 
@@ -271,8 +270,8 @@ button:hover{
     transition: 0.2s ease;
 }
 
-.copy-icon:hover{
-    color: rgba(255,255,255,0.75);
+.copy-icon:hover {
+    color: rgba(255, 255, 255, 0.75);
 
     background: transparent;
 
@@ -281,18 +280,18 @@ button:hover{
     box-shadow: none;
 }
 
-.result-box{
-    position:relative;
+.result-box {
+    position: relative;
 }
 
 
 
-#encrypt-time{
+#encrypt-time {
     margin-top: 12px;
 
     font-size: 15px;
 
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 
     letter-spacing: 1px;
 }
@@ -300,19 +299,19 @@ button:hover{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    body{
+    body {
         height: auto;
 
         padding: 40px 20px;
     }
 
-    .container{
+    .container {
         width: 100%;
     }
 
-    h1{
+    h1 {
         font-size: 38px;
 
         letter-spacing: 6px;
@@ -322,18 +321,18 @@ button:hover{
         margin-bottom: 40px;
     }
 
-    .panels{
+    .panels {
         flex-direction: column;
 
         gap: 30px;
     }
 
-    .divider{
+    .divider {
         display: none;
     }
 
     .enc,
-    .denc{
+    .denc {
         width: 100%;
 
         max-width: 350px;
@@ -341,16 +340,16 @@ button:hover{
         padding: 24px;
     }
 
-    input{
+    input {
         font-size: 14px;
     }
 
-    button{
+    button {
         font-size: 13px;
     }
 
     #encrypt-result,
-    #decrypt-result{
+    #decrypt-result {
         min-height: 90px;
 
         font-size: 13px;
